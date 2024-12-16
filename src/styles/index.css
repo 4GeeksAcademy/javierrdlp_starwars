@@ -1,3 +1,31 @@
-/* 
-    General Styles
-*/
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px; /* Espaciado entre tarjetas */
+    padding: 10px;
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 20px; /* Tamaño del scroll */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.card {
+    flex: 0 0 250px; /* Cada tarjeta tiene un ancho fijo de 250px */
+    height: auto; /* Ajusta la altura automáticamente */
+    max-width: 250px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenido dentro de la tarjeta si es necesario */
+}
+i{
+    font-size:xx-large;   
+    cursor: "pointer";       
+}
